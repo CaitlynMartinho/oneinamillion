@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>OneInAMillion</title>
+    <link href="Home/style.css" rel="stylesheet">
+    <link rel="icon" href="Images/uranus.png" type="image/x-icon">
+</head>
+<body>
+    <div id="leftContent">
+        <div id="clicksContainer"><h1 id="clicks">Clicks: 0</h1></div>
+        <img src="Images/earth.png" id="earthImg" draggable="false" onclick="addClicks();audio.play()">
+        <div id="progressContainer">
+            <progress value="1" id="progressBar"></progress>
+            <h2 id="level">Level: 1</h2>
+        </div>
+        <div id="plusOne"></div>
+    </div>
+    <div id="rightContent">
+        <div id="menuContainer">
+            <div id="collection">
+            <h1 id="menuHeading">Collection</h1>
+            <h2 id="menuSubHeading">1 in 250</h2>
+                <div id="collectionItems">
+                    <img id="one">
+                    <h3 id="textOne" class="collectionText">???</h3>
+                </div>
+                <div id="collectionItems">
+                    <img id="two">
+                    <h3 id="textTwo" class="collectionText">???</h3>
+                </div>
+                <div id="collectionItems">
+                    <img id="three">
+                    <h3 id="textThree" class="collectionText">???</h3>
+                </div>
+            <h2 id="menuSubHeading">1 in 500</h2>
+            <div id="collectionItems">
+                <img id="four">
+                <h3 id="textFour" class="collectionText">???</h3>
+            </div>
+            <div id="collectionItems">
+                <img id="five">
+                <h3 id="textFive" class="collectionText">???</h3>
+            </div>
+            <div id="collectionItems">
+                <img id="six">
+                <h3 id="textSix" class="collectionText">???</h3>
+            </div>
+            <h2 id="menuSubHeading">1 in 1000</h2>
+            <div id="collectionItems">
+                <img id="seven">
+                <h3 id="textSeven" class="collectionText">???</h3>
+            </div>
+            <div id="collectionItems">
+                <img id="eight">
+                <h3 id="textEight" class="collectionText">???</h3>
+            </div>
+            <div id="collectionItems">
+                <img id="nine">
+                <h3 id="textNine" class="collectionText">???</h3>
+            </div>
+        </div>
+        <div id="store">
+            <h1 id="menuHeading">Store</h1>
+            <h2 id="menuSubHeading">Autoclickers</h2>
+            <div id="storeContainer">
+                <img src="Images/tap.png">
+                <h3>Autoclicker</h3>
+                <p>10 min duration</p>
+                <h4>$10 000</h4>
+            </div>
+            <div id="storeContainer">
+                <img src="Images/goldTap.png">
+                <h3>Autoclicker</h3>
+                <p>30 min duration</p>
+                <h4>$25 000</h4>
+            </div>
+            <h2 id="menuSubHeading">Mystery</h2>
+            <div id="storeContainer">
+                <img src="Images/skull.png">
+                <h3>DO NOT BUY</h3>
+                <p>Don't do it, why would you?</p>
+                <h4>$10m</h4>
+            </div>
+        </div>
+        <div id="multiplayer">
+            <h1 id="menuHeading">Multiplayer</h1>
+        </div>
+        <div id="profile">
+            <h1 id="menuHeading">Profile</h1>
+        </div>
+    </div>
+        <div id="navBar">
+            <div id="navBarItem1" onclick="openCollection()"><img src="Images/chest.png" draggable="false"></div> 
+            <div id="navBarItem2" onclick="openStore()"><img src="Images/basketG.png" draggable="false"></div> 
+            <div id="navBarItem3" onclick="openMultiplayer()"><img src="Images/crownG.png" draggable="false"></div> 
+            <div id="navBarItem4" onclick="openProfile()"><img src="Images/profileG.png" draggable="false"></div> 
+        </div>
+    </div>
+
+    <div id="levelUpMenu">
+        <h2>Level Up!</h2>
+        <p>Level up </p>
+        <p>rewards</p>
+        <p>coming</p>
+        <p>soon!</p>
+        <button id="levelUpBtn">Close</button>
+    </div>
+
+        <div id="popUpMenu">
+            <h2 id="popUpText">Collected:</h2>
+            <img id="popUpImg">
+            <button id="popUpBtn">Close</button>
+        </div>
+
+<script src="Home/popup.js"></script>
+<script src="Home/unlocks.js"></script>
+<script src="Home/main.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3061835390661161"
+     crossorigin="anonymous"></script>
+</body>
+</html>

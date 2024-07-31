@@ -1,0 +1,366 @@
+@font-face {
+    font-family: speedy;
+    src: url(SpeedyRegular.ttf);
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to right top, #051937, #122a5b, #293b81, #474ba7, #6a5acd);
+    font-family: speedy;
+    user-select: none;
+}
+
+#leftContent{
+    color: white;
+    width: 50%;
+    margin: 0px;
+    height: 100vh;
+    position: relative;
+    
+}
+#clicksContainer{
+    width: 380px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 23px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 10%;
+}
+#clicks{
+    text-align: center;
+}
+
+#earthImg{
+    height: 350px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+}
+#earthImg:active{
+    scale: 0.95;
+}
+#earthImg:hover{
+    cursor: pointer;
+}
+#progressContainer{
+    width: 380px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 10%;
+}
+#level{
+    text-align: right;
+    
+    
+}
+
+progress{
+    width: 380px;
+    height: 10px;
+    
+}
+progress[value]{
+    -moz-appearance: none;
+    appearance: none;
+}
+ progress[value]::-webkit-progress-bar{
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  
+}
+  
+ progress[value]::-webkit-progress-value{
+    background-color: rgb(0, 113, 188);
+    border-radius: 5px;
+  
+ }
+
+ #rightContent{
+    color: white;
+    width: 50%;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+
+ #menuContainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 100px;
+    margin-top: 10%;
+    position: relative;
+    border-radius: 10px;
+    height: 80%;
+    overflow-y: scroll;
+ }
+
+ #menuHeading{
+    text-align: center;
+    padding: 20px;
+ }
+
+ #menuSubHeading{
+    color: gray;
+    margin-left: 35px;
+    font-size: 20px;
+ }
+
+#plusOne{
+    z-index: 1;
+    color: white;
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    user-select: none;
+ }
+
+ #collectionItems{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 220px;
+    width: 180px;
+    margin-left: 35px;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+ }
+
+ .collectionText{
+    color: gray;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+ }
+
+ #collectionItems img{
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+ }
+
+ /* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 90px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 113, 188);
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 78, 131);
+  }
+
+  #navBar{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    height: 400px;
+    left: 25px;
+    width: 75px;
+  }
+
+  #navBar div{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    align-self: right;
+    border-radius: 10px 0 0 10px;
+  }
+
+  #navBar div:hover{
+    background-color: rgba(0, 0, 0, 0.76);
+    cursor: pointer;
+  }
+  #navBar img{
+    height: 30px;
+  }
+  #navBarItem1{
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  #navBarItem2{
+    position: absolute;
+    right: 0;
+    top: 90px;
+  }
+  #navBarItem3{
+    position: absolute;
+    right: 0;
+    top: 170px;
+  }
+  #navBarItem4{
+    position: absolute;
+    right: 0;
+    top: 250px;
+  }
+  #collection{
+    display: block;
+  }
+  #store{
+    display: none;
+    opacity: 0.7;
+  }
+  #multiplayer{
+    display: none;
+    opacity: 0.7;
+  }
+  #profile{
+    display:none;
+    opacity: 0.7;
+  }
+  #storeContainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 70%;
+    margin-left: 35px;
+    border-radius: 10px;
+    position: relative;
+    height: 100px;
+    margin-bottom: 25px;
+    
+  }
+  #storeContainer img{
+    height: 50px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 25px;
+  }
+
+  #storeContainer h3{
+    position: absolute;
+    top: 10px;
+    left: 90px;
+  }
+
+  #storeContainer h4{
+    position: absolute;
+    right: 25px;  
+    top: 15px;                                     
+
+  }
+
+  #storeContainer p{
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+  }
+
+  #levelUpMenu{
+    background-color: rgb(0, 78, 131);
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    display: none;
+  }
+
+  #levelUpMenu h2{
+    color: white;
+    text-align: center;
+  }
+  #levelUpMenu p{
+    color: gray;
+    margin-left: 25px;
+  }
+  #levelUpBtn{
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    bottom: 25px;
+    left: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: speedy;
+    font-size: 15px;
+
+  }
+  #levelUpBtn:hover{
+    background-color: rgba(48, 48, 48, 0.5);
+    cursor: pointer;
+  }
+
+#popUpMenu{
+    background-color: rgb(0, 78, 131);
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    display: none;
+    
+  }
+  #popUpBtn{
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    bottom: 25px;
+    left: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: speedy;
+    font-size: 15px;
+  }
+  #popUpBtn:hover{
+    background-color: rgba(48, 48, 48, 0.5);
+    cursor: pointer;
+  }
+  #popUpMenu h2{
+    color: white;
+    text-align: center;
+  }
+  #popUpImg{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
